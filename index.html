@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');</style>
+</head>
+
+<body>
+    <div class="login-container bg-base-100">
+        <div class="login-card bg-base-200 shadow-xl rounded-xl p-8" data-theme="dark">
+
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="ph ph-sun text-violet-400" id="theme-icon"></i>
+            </button>
+
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold mb-2">Login</h1>
+            </div>
+
+            <form>
+                <div class="input-group">
+                    <i class="input-icon ph ph-envelope"></i>
+                    <input type="email" class="input-field" placeholder="Email" required autofocus>
+                </div>
+
+                <div class="input-group">
+                    <i class="input-icon ph ph-lock"></i>
+                    <input type="password" class="input-field" placeholder="Senha" required autofocus>
+                </div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" class="checkbox checkbox-sm checkbox-primary">
+                        <span class="text-sm">Lembrar-me</span>
+                    </label>
+
+                    <a href="#" class="text-sm  hover:underline">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="login-btn" >Entrar</button>
+            </form>
+
+            <div class="divider">
+                <span class="divider-text">Ou</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn">
+                    <i class="ph ph-google-logo text-xl"></i>
+                </button>
+                <button class="social-btn">
+                    <i class="ph ph-facebook-logo text-xl"></i>
+                </button>
+                <button class="social-btn">
+                    <i class="ph ph-github-logo text-xl"></i>
+                </button>
+            </div>
+
+            <div class="text-center">
+                <p class="text-base-content/60">
+                    Não tem uma conta?
+                    <a href="#" class="text-violet-500 hover:underline">Registre-se</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scrapt.js"></script>
+</body>
+
+</html>
